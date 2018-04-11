@@ -6,7 +6,7 @@
 /*   By: jcook <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 15:15:13 by jcook             #+#    #+#             */
-/*   Updated: 2018/04/05 15:15:28 by jcook            ###   ########.fr       */
+/*   Updated: 2018/04/11 15:28:53 by jcook            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
 	int	i;
 	int j;
-	
+
 	i = ft_strlen(s1);
 	j = 0;
 	while (s2[j] != '\0')
@@ -28,5 +28,3 @@ char	*ft_strcat(char *restrict s1, const char *restrict s2)
 	s1[i] = '\0';
 	return (s1);
 }
-
-

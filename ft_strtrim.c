@@ -6,7 +6,7 @@
 /*   By: jcook <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 15:15:13 by jcook             #+#    #+#             */
-/*   Updated: 2018/04/05 15:15:28 by jcook            ###   ########.fr       */
+/*   Updated: 2018/04/11 15:31:46 by jcook            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(char const *s)
 {
-	size_t i;
-	int j;
-	char *trmd;
-	
+	size_t	i;
+	int		j;
+	char	*trmd;
+
 	i = 0;
 	j = 0;
 	if (!s)
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s)
 		return (NULL);
 	while (i < ft_strlen(s))
 	{
-		if(s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 			i++;
 		while (s[i] != ' ' || s[i] != '\n' || s[i] != '\t')
 		{
